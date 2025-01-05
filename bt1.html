@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Viết chương trình nhập vào 1 số n, in ra tổng các số từ 1 - n </h1>
+    <input type = "number" id = "inputNumber1" placeholder = "nhập số vào ô">
+    <button onclick="calculateSum()">Tính tổng</button>
+    <p id = "result"></p>
+    <script>
+        function calculateSum() {
+            var inputNumber = document.getElementById("inputNumber1").value;
+            var sum = 0;
+            for (var i = 1; i <= inputNumber; i++) {
+                sum += i;
+            }
+            document.getElementById("result").innerHTML = "Tổổng các số từ 1 đến " + inputNumber + " là: " + sum;
+        }
+    </script>
+</body>
+</html>
