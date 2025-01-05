@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Viết chương trình nhập vào ngày tháng năm sinh -> in ra tuổi</h1>
+    <input type = "number" id = "inputNumber" placeholder = "nhập vào năm sinh">
+    <button onclick = "calculateAge()">Tính tuổi</button>
+    <p id="age"></p>
+    <script>
+        function calculateAge() {
+            var birthYear = document.getElementById("inputNumber").value;
+            var currentYear = new Date().getFullYear();
+            var age = currentYear - birthYear;
+            document.getElementById("age").innerText = "Tuổi của bạn: " + age;
+        }
+
+    </script>
+</body>
+</html>
