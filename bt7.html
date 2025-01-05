@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Viết chương trình tìm giá trị nhỏ nhất trong mảng </h1>
+    <script>
+    var array = [1,2,4,6,7,9,5,0];
+    var min = array[0];
+    for(let i = 1; i < array.length; i++){
+        if(array[i] < min){
+            min = array[i];
+        }
+    }
+    document.write(min)
+    </script>
+</body>
+</html>
