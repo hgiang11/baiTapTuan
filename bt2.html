@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Viết chương trình nhập vào số n, in ra n số chẵn đầu tiên</h1>
+    <input type="number" id="inputNumber" placeholder="nhập số">
+    <button onclick = "displayEvenNumbers()">Tìm</button>
+    <p id = "result"></p>
+    <script>
+        function displayEvenNumbers() {
+            var inputNumber = document.getElementById("inputNumber").value;
+            /* for(var i=0; i<inputNumber.length; i++) {
+                 let j = inputNumber * 2;
+ 
+         }      cách 1 */
+            let count = 0;
+            let i = 0;
+            let res = ""
+            while (count < inputNumber) {
+                if (i % 2 === 0) {
+                    res += i + " ";
+                    count++;
+                }
+                i++;
+            }
+            document.getElementById("result").innerHTML = "Số ch��n đầu tiên trong danh sách: " + res;
+        }
+
+        
+
+
+    </script>
+</body>
+
+</html>
